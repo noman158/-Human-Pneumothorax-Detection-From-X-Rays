@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Human Pneumothorax Detector</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        form {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            display: block;
+            margin: 0 auto;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+
+        .credits {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .title {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Human Pneumothorax Detector</div>
+    <form method="POST" action="/" enctype="multipart/form-data">
+        <div>Upload X-Ray Image:</div>
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+    <div class="instructions">
+        <h2>Instructions:</h2>
+        <ul>
+            <li>Select an X-ray image in JPG or PNG format.</li>
+            <li>Make sure the image contains a clear view of the chest area.</li>
+            <li>Click on the "Upload" button to process the image.</li>
+        </ul>
+    </div>
+    <div class="credits">
+        <div>Digital Image Processing</div>
+        <div style="font-size: 18px;">19I-0629 Noman Maqsood</div>
+    </div>
+</body>
+</html>
